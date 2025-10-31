@@ -16,7 +16,7 @@ function CartWidget() {
             aria-label="Carrito"
         >
             <img
-                src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+                src="./src/assets/img/carro-de-la-compra.png"
                 alt="Carrito de compras"
                 style={{ width: '24px', height: '24px' }}
             />
