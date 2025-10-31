@@ -16,12 +16,7 @@ function Footer() {
             React.createElement('p', {
                 key: 'rights',
               
-            }, 'Todos los derechos reservados'),
-
-            React.createElement('div', {
-                key: 'footer-links',
-               
-            })
+            }, 'Todos los derechos reservados')
         ])
     ]);
 }
