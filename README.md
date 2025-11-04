@@ -1,2 +1,0 @@
-Hola profe, disculpe, hice todo lo que pude pero no logré solucionarlo. Terminé borrando el repositorio, instalando todo de nuevo y pasando el proyecto a uno nuevo, siguiendo el repaso que hizo en la última clase, pero no hubo forma de hacerlo funcionar.
-Si pudiera decirme que me esta faltando, se lo agradecería mucho.
