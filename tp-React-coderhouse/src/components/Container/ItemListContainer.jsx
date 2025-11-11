@@ -1,39 +1,31 @@
-import './ItemListContainer.css';
+import { useEffect, useState } from "react";
+import ItemList from "./ItemList";
+import "./ItemListContainer.css";
 
-function ItemListContainer() {
-    return (
-        <section>
-            <article >
-                <div className="portada">
-                    <h1>Bienvenido Krakenshop</h1>
-                    <p>
-                        Próximamente: catálogo completo de juegos de mesa para toda la familia. 
-                    </p>
-                    <p>Encuentra los mejores juegos, expansiones y accesorios en un solo lugar.</p>
-                </div>
-                <div className="botones-portada">
-                    <button>explorar catálogo</button>
-                    <button>más información</button>
-                </div>
-            </article>
-            <article className="estadisticas">
-                <div>
-                    <h2>500+</h2>
-                    <p>juegos disponibles</p>
-                </div>
-                <div>
-                    <h2>24/7</h2>
-                    <p>atención al cliente</p>
-                </div>
-                <div>
-                    <h2>4.9</h2>
-                    <p>valoración promedio</p>
-                </div>
-            </article>
-        </section>
-    )
-}
+const ItemListContainer = ({ greeting }) => {
+  const [juegos, setJuegos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-export default ItemListContainer
+  useEffect(() => {
+    fetch("/data/juegos.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setJuegos(data);
+        setLoading(false);
+      })
+      .catch((error) => console.error("Error al cargar los juegos:", error));
+  }, []);
 
+  return (
+    <main className="itemlistcontainer">
+      <h1>{greeting}</h1>
+      {loading ? (
+        <p className="loading">Cargando catálogo...</p>
+      ) : (
+        <ItemList juegos={juegos} />
+      )}
+    </main>
+  );
+};
 
+export default ItemListContainer;
