@@ -1,3 +1,5 @@
+import './CartWidget.css';
+
 function CartWidget() {
     return (
         <button
@@ -10,11 +12,11 @@ function CartWidget() {
                 alt="Carrito de compras"
 
             />
-            <span
-
-            >
-                0
-            </span>
+            <div>
+                <span>
+                    0
+                </span>
+            </div>
         </button>
     )
 }

@@ -1,22 +1,24 @@
 
-.navbar {
-  background-color: #3388f7;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav {
+    background: linear-gradient(to right, blue, cyan);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.navbar h1 {
-  color: #ffffff;
-  margin: 10px;
-  font-size: 40px;
-}
-.navbar a {
-  color: #ffffff;
-  margin: 0 12px;
-  font-weight: 24px;
-}
-.navbar a:hover {
-  text-decoration: underline;
-}
+  nav section {
+    display: flex;
+    align-items: center;  
+    gap: 24px;
+  }
+  nav h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  .navbar a {
+    color: white;
+    font-size: 18px;
+    margin: 0 12px;
+  } 

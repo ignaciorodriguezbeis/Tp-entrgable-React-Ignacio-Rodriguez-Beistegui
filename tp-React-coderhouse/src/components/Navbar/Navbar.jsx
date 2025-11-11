@@ -1,12 +1,16 @@
-import CartWidget from './CartWidget'; 
+import CartWidget from './CartWidget';
+import './Navbar.css';
 
 function Navbar() {
     return (
-        <nav>
-            <div>
-               <h1>Krakenshop</h1>
-            </div>
-            <div>
+        <nav >
+            <section>
+                <div>
+                    <h1 href="#">Krakenshop</h1>
+                </div>
+                <a href="#">Home</a>
+            </section>
+            <div className="navbar">
                 <a href="#">Infantiles</a>
                 <a href="#">Categorias</a>
                 <a href="#">Expansiones</a>
