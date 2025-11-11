@@ -6,10 +6,10 @@ function Footer() {
         <footer>
             <div class="footer-social">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <img src="./src/assets/img/facebook_icon.png"></img>
+                    <img src="./src/assets/img/facebook-icon.png"></img>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./src/assets/img/instagram_icon.png"></img>
+                    <img src="./src/assets/img/instagram-icon.png"></img>
                 </a>
                 <a href="https://web.whatsapp.com/" target="_blank">
                     <img src="./src/assets/img/whatsapp-icon.png"></img>
@@ -24,3 +24,4 @@ function Footer() {
 }
 
 export default Footer
+
