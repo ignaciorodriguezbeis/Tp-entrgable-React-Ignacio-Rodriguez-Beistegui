@@ -8,7 +8,7 @@
     "duracion": "120-180 min",
     "precio": 125.00,
     "editorial": "Awaken Realms",
-    "imagen": "/img/nemesis.jpg",
+    "imagen": "./src/assets/img/nemesis.jpg",
     "stock": 8
   },
   {
