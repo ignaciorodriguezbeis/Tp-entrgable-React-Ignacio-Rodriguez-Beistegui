@@ -3,7 +3,7 @@ import { CartContext } from '../../context/CartContext';
 import './CartModal.css';
 
 function CartModal({ isOpen, onClose }) {
-    const { cartItems, eliminarDelCarrito, disminuirCantidad } = useContext(CartContext);
+    const { cartItems, eliminarDelCarrito, disminuirCantidad, aumentarCantidad } = useContext(CartContext);
 
     if (!isOpen) return null;
 
@@ -19,7 +19,7 @@ function CartModal({ isOpen, onClose }) {
                     <h2>Carrito de Compras</h2>
                     <button className="close-button" onClick={onClose}>✕</button>
                 </div>
-                
+
                 <div className="modal-content">
                     {cartItems.length === 0 ? (
                         <p className="empty-cart">Tu carrito está vacío</p>
@@ -41,18 +41,18 @@ function CartModal({ isOpen, onClose }) {
                                             className="btn-aumentar"
                                             onClick={() => aumentarCantidad(item.id)}
                                             title='Aumentar Cantidad'
-                                            >
+                                        >
                                             +
                                         </button>
-                                        <button 
-                                            className="btn-disminuir" 
+                                        <button
+                                            className="btn-disminuir"
                                             onClick={() => disminuirCantidad(item.id)}
                                             title="Disminuir Cantidad"
                                         >
                                             -
                                         </button>
-                                        <button 
-                                            className="btn-eliminar" 
+                                        <button
+                                            className="btn-eliminar"
                                             onClick={() => eliminarDelCarrito(item.id)}
                                             title="Eliminar Del Carrito"
                                         >
@@ -67,10 +67,11 @@ function CartModal({ isOpen, onClose }) {
 
                 {cartItems.length > 0 && (
                     <div className="modal-footer">
+                        <button className="checkout-button">Continuar Compra</button>
                         <div className="total-section">
                             <h3>Total: ${calcularTotal().toFixed(2)}</h3>
                         </div>
-                        <button className="checkout-button">Ir al Checkout</button>
+
                     </div>
                 )}
             </div>

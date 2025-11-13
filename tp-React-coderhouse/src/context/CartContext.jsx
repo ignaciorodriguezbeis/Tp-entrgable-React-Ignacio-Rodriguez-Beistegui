@@ -39,8 +39,16 @@ export const CartProvider = ({ children }) => {
     );
   };
 
+  const aumentarCantidad = (juegoId) => {
+    setCartItems((prevItems) =>
+      prevItems.map((item) =>
+        item.id === juegoId ? { ...item, cantidad: item.cantidad + 1 } : item
+      )
+    );
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, agregarAlCarrito, obtenerCantidadTotal, eliminarDelCarrito, disminuirCantidad }}>
+    <CartContext.Provider value={{ cartItems, agregarAlCarrito, obtenerCantidadTotal, eliminarDelCarrito, disminuirCantidad, aumentarCantidad }}>
       {children}
     </CartContext.Provider>
   );
