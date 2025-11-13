@@ -8,10 +8,11 @@ const ItemCard = ({ juego }) => {
         <h2>{juego.nombre}</h2>
         <p className="categoria">{juego.categoria}</p>
         <p className="descripcion">{juego.descripcion}</p>
-        <div className="footer">
-          <span className="precio">${juego.precio.toFixed(2)}</span>
-          <button>Ver más</button>
-        </div>
+        <span className="precio">${juego.precio.toFixed(2)}</span>
+      </div>
+      <div className="button-list">
+        <button onClick={() => onAgregar(juego)}>agregar al carrito</button>
+        <button>Ver más</button>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   width: 250px;
+  margin: 16px;
 }
 
 .itemcard:hover {
@@ -14,12 +15,12 @@
 
 .itemcard img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
 .info {
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   height: 220px;
@@ -27,45 +28,46 @@
 }
 
 .info h2 {
-  font-size: 1.1rem;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0px;
   color: #222;
 }
 
 .categoria {
-  font-size: 0.9rem;
+  font-size:16px;
   color: #888;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0px;
 }
 
 .descripcion {
-  font-size: 0.85rem;
+  font-size: 12px;
   color: #555;
-  flex-grow: 1;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0px;
 }
 
-.footer {
+.button-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto 10px;
 }
 
 .precio {
   color: #28a745;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 0.4rem 0.8rem;
+  padding: 2px 2px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-bottom: 8px;
 }
 
 button:hover {

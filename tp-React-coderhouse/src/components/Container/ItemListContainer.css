@@ -1,18 +1,18 @@
 .itemlistcontainer {
-  padding: 2rem;
+  padding:  32px;
   min-height: 100vh;
   background-color: #f5f5f5;
   text-align: center;
 }
 
 .itemlistcontainer h1 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   color: #333;
 }
 
 .loading {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
