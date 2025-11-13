@@ -8,7 +8,7 @@
     "duracion": "120-180 min",
     "precio": 125.00,
     "editorial": "Awaken Realms",
-    "imagen": "./src/assets/img/nemesis.jpg",
+    "imagen": "/src/assets/img/nemesis.jpg",
     "stock": 8
   },
   {
@@ -20,7 +20,7 @@
     "duracion": "90-150 min",
     "precio": 110.00,
     "editorial": "Feuerland Spiele",
-    "imagen": "/img/ark_nova.jpg",
+    "imagen": "/src/assets/img/ark-nova.jpg",
     "stock": 10
   },
   {
@@ -32,7 +32,7 @@
     "duracion": "150-240 min",
     "precio": 130.00,
     "editorial": "Cole Wehrle / Wehrlegig Games",
-    "imagen": "/img/john_company.jpg",
+    "imagen": "/src/assets/img/John-Company.jpg",
     "stock": 6
   },
   {
@@ -44,7 +44,7 @@
     "duracion": "60-90 min",
     "precio": 55.00,
     "editorial": "Hans im Glück",
-    "imagen": "/img/stone_age.jpg",
+    "imagen": "/src/assets/img/Stone-Age.avif",
     "stock": 14
   },
   {
@@ -56,7 +56,7 @@
     "duracion": "90-150 min",
     "precio": 95.00,
     "editorial": "Orange Nebula",
-    "imagen": "/img/vindication.jpg",
+    "imagen": "/src/assets/img/Vindication.jpg",
     "stock": 9
   },
   {
@@ -68,7 +68,7 @@
     "duracion": "20 min",
     "precio": 20.00,
     "editorial": "Kosmos",
-    "imagen": "/img/la_tripulacion.jpg",
+    "imagen": "/src/assets/img/La-Tripulación.jpg",
     "stock": 25
   },
   {
@@ -80,7 +80,7 @@
     "duracion": "120 min",
     "precio": 75.00,
     "editorial": "FryxGames",
-    "imagen": "/img/terraforming_mars.jpg",
+    "imagen": "/src/assets/img/Terraforming-Mars.jpg",
     "stock": 11
   },
   {
@@ -92,7 +92,7 @@
     "duracion": "40-70 min",
     "precio": 65.00,
     "editorial": "Stonemaier Games",
-    "imagen": "/img/wingspan.jpg",
+    "imagen": "/src/assets/img/Wingspan.webp",
     "stock": 18
   },
   {
@@ -104,7 +104,7 @@
     "duracion": "90-180 min",
     "precio": 80.00,
     "editorial": "Roxley Games",
-    "imagen": "/img/brass_birmingham.jpg",
+    "imagen": "/src/assets/img/Brass.jpg",
     "stock": 12
   },
   {
@@ -116,7 +116,7 @@
     "duracion": "60-120 min",
     "precio": 70.00,
     "editorial": "Dire Wolf",
-    "imagen": "/img/dune_imperium.jpg",
+    "imagen": "/src/assets/img/dune_imperium.jpg",
     "stock": 10
   },
   {
@@ -128,7 +128,7 @@
     "duracion": "120-180 min",
     "precio": 150.00,
     "editorial": "Lautapelit.fi",
-    "imagen": "/img/eclipse_2nd_dawn.jpg",
+    "imagen": "/src/assets/img/Eclipse.png",
     "stock": 7
   },
   {
@@ -140,7 +140,7 @@
     "duracion": "75-150 min",
     "precio": 70.00,
     "editorial": "eggertspiele",
-    "imagen": "/img/great_western_trail.jpg",
+    "imagen": "/src/assets/img/gauchos.jpg",
     "stock": 9
   },
   {
@@ -152,7 +152,7 @@
     "duracion": "90-120 min",
     "precio": 85.00,
     "editorial": "Greater Than Games",
-    "imagen": "/img/spirit_island.jpg",
+    "imagen": "/src/assets/img/spirit-island.jpg",
     "stock": 8
   },
   {
@@ -164,7 +164,7 @@
     "duracion": "60-120 min",
     "precio": 60.00,
     "editorial": "Czech Games Edition",
-    "imagen": "/img/lost_ruins_arnak.jpg",
+    "imagen": "/src/assets/img/arnak.jpg",
     "stock": 13
   },
   {
@@ -176,7 +176,7 @@
     "duracion": "60-120 min por sesión",
     "precio": 180.00,
     "editorial": "Cephalofair Games",
-    "imagen": "/img/gloomhaven.jpg",
+    "imagen": "/src/assets/img/gloomhaven.webp",
     "stock": 5
   }
 ]
