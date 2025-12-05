@@ -16,7 +16,7 @@ function CartWidget() {
                 onClick={() => setIsModalOpen(true)}
             >
                 <img
-                    src="./src/assets/img/carro-de-la-compra.png"
+                    src="/src/assets/img/carro-de-la-compra.png"
                     alt="Carrito de compras"
                 />
                 <div>

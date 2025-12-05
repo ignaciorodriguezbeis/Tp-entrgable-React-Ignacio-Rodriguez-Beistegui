@@ -126,13 +126,17 @@ p {
     flex-direction: column;
     gap: 18px;
     background-color: #e6eefb;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .info-top .rating {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.info-top p{
+    border-bottom: 1px solid #dfe6ef;
+    padding: 0 14px; 
 }
 
 .stars {

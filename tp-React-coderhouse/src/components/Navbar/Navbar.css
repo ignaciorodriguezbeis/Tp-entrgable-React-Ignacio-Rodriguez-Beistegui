@@ -24,6 +24,13 @@ nav section a {
   color: white;
 }
 
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-weight: 800;
+}
+
 .navbar a {
   color: white;
   font-size: 18px;
