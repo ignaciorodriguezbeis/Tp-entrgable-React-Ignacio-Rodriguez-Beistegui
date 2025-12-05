@@ -1,19 +1,25 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/Navbar/Navbar'
-import ItemDetail from './components/Container/ItemDetairl'    //una cosa curiosa que me paso enesta linea es que si ponia ItemDetail me tiraba error, tuve que poner ItemDetairl como en el nombre del archivo
-import Footer from './components/Footer/Footer'
+import ItemDetairl from './components/Container/ItemDetairl'
 import ItemListContainer from './components/Container/ItemListContainer'
+import ItemDetailContainer from './components/Container/ItemDetailContainer'
+import Footer from './components/Footer/Footer'
 import { CartProvider } from './context/CartContext'
 
 function App() {
   return (
-    <CartProvider>
-      <NavBar />
-      <ItemDetail />
-      <ItemListContainer />
-      <Footer />
-    </CartProvider>
+    <BrowserRouter>
+      <CartProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemDetairl />} />
+          <Route path="/catalogo" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+        </Routes>
+        <Footer />
+      </CartProvider>
+    </BrowserRouter>
   )
 }
 

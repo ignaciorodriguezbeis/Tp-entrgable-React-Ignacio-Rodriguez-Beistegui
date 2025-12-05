@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import './Navbar.css';
 
@@ -6,15 +7,15 @@ function Navbar() {
         <nav >
             <section>
                 <div>
-                    <h1 href="#">Krakenshop</h1>
+                    <Link to="/" className="logo">Krakenshop</Link>
                 </div>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
             </section>
             <div className="navbar">
-                <a href="#">Infantiles</a>
-                <a href="#">Categorias</a>
-                <a href="#">Expansiones</a>
-                <a href="#">Repuestos</a>
+                <Link to="/catalogo">Catálogo</Link>
+                <Link to="/catalogo">Categorías</Link>
+                <Link to="/catalogo">Expansiones</Link>
+                <Link to="/catalogo">Repuestos</Link>
             </div>
             <CartWidget />
         </nav>

@@ -1,9 +1,15 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import "./ItemCard.css";
 
 const ItemCard = ({ juego }) => {
   const { agregarAlCarrito } = useContext(CartContext);
+  const navigate = useNavigate();
+
+  const handleVerMas = () => {
+    navigate(`/item/${juego.id}`);
+  };
 
   return (
     <div className="itemcard">
@@ -16,7 +22,7 @@ const ItemCard = ({ juego }) => {
       </div>
       <div className="button-list">
         <button onClick={() => agregarAlCarrito(juego)}>agregar al Carrito</button>
-        <button>Ver más</button>
+        <button onClick={handleVerMas}>Ver más</button>
       </div>
     </div>
   );
