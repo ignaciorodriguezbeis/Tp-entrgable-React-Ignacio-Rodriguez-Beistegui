@@ -7,7 +7,7 @@ function ItemDetairl() {
                 <div className="portada">
                     <h1>Bienvenido Krakenshop</h1>
                     <p>
-                        Próximamente: catálogo completo de juegos de mesa para toda la familia. 
+                        Próximamente: catálogo completo de juegos de mesa para toda la familia.
                     </p>
                     <p>Encuentra los mejores juegos, expansiones y accesorios en un solo lugar.</p>
                 </div>

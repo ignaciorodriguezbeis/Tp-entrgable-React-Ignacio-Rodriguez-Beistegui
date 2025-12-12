@@ -101,7 +101,7 @@ const ItemDetailContainer = () => {
 
                 <section className="info-panel">
                     <div className="info-top">
-                        
+
                         <h1 className="title">{juego.nombre}</h1>
                         <h2>{juego.editorial}</h2>
                         <p className="lead">{juego.descripcion}</p>

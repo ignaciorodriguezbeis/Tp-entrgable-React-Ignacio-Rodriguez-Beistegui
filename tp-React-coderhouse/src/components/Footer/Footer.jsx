@@ -19,7 +19,7 @@ function Footer() {
                 <p>© 2025 Krakenshop - Tu tienda de juegos de mesa. derechos reservados.</p>
             </div>
 
-        </footer > 
+        </footer >
     )
 }
 

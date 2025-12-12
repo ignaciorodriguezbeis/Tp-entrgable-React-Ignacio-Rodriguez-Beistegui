@@ -7,11 +7,13 @@ button {
   align-items: center;
 
 }
+
 .cart-widget img {
-    width: 26px;
-    height: 26px;
-    
+  width: 26px;
+  height: 26px;
+
 }
+
 .cart-widget div {
   height: 20px;
   width: 20px;
@@ -22,11 +24,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .cart-widget div span {
-    
-    font-size: 12px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

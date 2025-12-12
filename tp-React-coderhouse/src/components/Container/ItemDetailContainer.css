@@ -134,9 +134,10 @@ p {
     align-items: center;
     gap: 10px;
 }
-.info-top p{
+
+.info-top p {
     border-bottom: 1px solid #dfe6ef;
-    padding: 0 14px; 
+    padding: 0 14px;
 }
 
 .stars {

@@ -18,17 +18,17 @@ const ItemListContainer = ({ greeting }) => {
         const db = getFirestore(app);
         const productsCollection = collection(db, 'products');
         const productsSnapshot = await getDocs(productsCollection)
-       const productsDb = productsSnapshot.docs.map(doc => {
+        const productsDb = productsSnapshot.docs.map(doc => {
           return { id: doc.id, ...doc.data() }
         })
-       
+
         setJuegos(productsDb)
         setLoading(false)
-        
+
       } catch (error) {
         console.log("Error juegos: ", error)
       }
-    }) ()
+    })()
   }, []);
 
 
