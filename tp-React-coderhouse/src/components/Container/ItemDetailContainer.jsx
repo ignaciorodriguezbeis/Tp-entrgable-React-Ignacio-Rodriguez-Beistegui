@@ -4,6 +4,7 @@ import { getFirestore, doc, getDoc } from 'firebase/firestore/lite';
 import { app } from '../../firebaseConfig';
 import { CartContext } from '../../context/CartContext';
 import './ItemDetailContainer.css';
+import ItemCount from './ItemCount';
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
@@ -13,7 +14,7 @@ const ItemDetailContainer = () => {
     const [comments, setComments] = useState([]);
     const [author, setAuthor] = useState('');
     const [text, setText] = useState('');
-    const [cantidad, setCantidad] = useState(1);
+    const [added, setAdded] = useState(false);
     const { agregarAlCarrito } = useContext(CartContext);
 
     useEffect(() => {
@@ -76,14 +77,10 @@ const ItemDetailContainer = () => {
         setText('');
     };
 
-    const aumentar = () => setCantidad((c) => c + 1);
-    const disminuir = () => setCantidad((c) => Math.max(1, c - 1));
-
-    const handleAgregarAlCarrito = () => {
+    const handleOnAdd = (cantidad) => {
         if (!juego) return;
-        for (let i = 0; i < cantidad; i++) {
-            agregarAlCarrito(juego);
-        }
+        agregarAlCarrito(juego, cantidad);
+        setAdded(true);
     };
 
     if (loading) return <p className="loading">Cargando detalle...</p>;
@@ -123,10 +120,11 @@ const ItemDetailContainer = () => {
                         </div>
 
                         <div className="quantity-row">
-                            <button className="qty-btn" onClick={disminuir}>-</button>
-                            <div className="qty-value">{cantidad}</div>
-                            <button className="qty-btn" onClick={aumentar}>+</button>
-                            <button className="add-cart" onClick={handleAgregarAlCarrito}>Agregar al carrito</button>
+                            {!added ? (
+                                <ItemCount stock={juego.stock || 99} initial={1} onAdd={handleOnAdd} />
+                            ) : (
+                                <div className="added-msg">Producto agregado al carrito</div>
+                            )}
                         </div>
 
                         <div className="purchase-info">

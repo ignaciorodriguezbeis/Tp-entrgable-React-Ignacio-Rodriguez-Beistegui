@@ -1,0 +1,4 @@
+.cart-page{padding:1rem}
+.cart-row{display:flex;gap:1rem;margin-bottom:1rem}
+.cart-row img{width:80px;height:80px;object-fit:cover}
+.cart-summary{margin-top:1rem}

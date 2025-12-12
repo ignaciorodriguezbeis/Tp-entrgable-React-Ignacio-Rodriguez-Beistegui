@@ -1,0 +1,3 @@
+.checkout-page{padding:1rem}
+.checkout-form{display:flex;flex-direction:column;gap:.5rem;max-width:420px}
+.checkout-summary{margin-top:.5rem}

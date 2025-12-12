@@ -1,9 +1,11 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import './CartModal.css';
 
 function CartModal({ isOpen, onClose }) {
     const { cartItems, eliminarDelCarrito, disminuirCantidad, aumentarCantidad } = useContext(CartContext);
+    const navigate = useNavigate();
 
     if (!isOpen) return null;
 
@@ -67,7 +69,7 @@ function CartModal({ isOpen, onClose }) {
 
                 {cartItems.length > 0 && (
                     <div className="modal-footer">
-                        <button className="checkout-button">Continuar Compra</button>
+                        <button className="checkout-button" onClick={() => { onClose(); navigate('/checkout'); }}>Continuar Compra</button>
                         <div className="total-section">
                             <h3>Total: ${calcularTotal().toFixed(2)}</h3>
                         </div>
