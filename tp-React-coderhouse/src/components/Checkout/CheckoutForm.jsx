@@ -48,17 +48,39 @@ const CheckoutForm = () => {
 
   return (
     <main className="checkout-page">
-      <h1>Checkout</h1>
-      <form className="checkout-form" onSubmit={handleSubmit}>
-        <input name="nombre" placeholder="Nombre" value={buyer.nombre} onChange={handleChange} required />
-        <input name="email" type="email" placeholder="Email" value={buyer.email} onChange={handleChange} required />
-        <input name="telefono" placeholder="Teléfono" value={buyer.telefono} onChange={handleChange} />
-        <input name="direccion" placeholder="Dirección" value={buyer.direccion} onChange={handleChange} required />
-        <div className="checkout-summary">
-          <p>Total a pagar: ${calcularTotal().toFixed(2)}</p>
-          <button type="submit" disabled={loading}>{loading ? 'Procesando...' : 'Confirmar Compra'}</button>
-        </div>
-      </form>
+      <h1>Resumen de Compras</h1>
+      <div className="checkout-container">
+        <form className="checkout-form" onSubmit={handleSubmit}>
+          <input name="nombre" placeholder="Nombre" value={buyer.nombre} onChange={handleChange} required />
+          <input name="email" type="email" placeholder="Email" value={buyer.email} onChange={handleChange} required />
+          <input name="telefono" placeholder="Teléfono" value={buyer.telefono} onChange={handleChange} />
+          <input name="direccion" placeholder="Dirección" value={buyer.direccion} onChange={handleChange} required />
+          <div className="checkout-summary">
+            <button type="submit" disabled={loading || cartItems.length === 0}>{loading ? 'Procesando...' : 'Confirmar Compra'}</button>
+            <p>Total a pagar: ${calcularTotal().toFixed(2)}</p>
+          </div>
+        </form>
+
+
+        <section className="checkout-items">
+          {cartItems.length === 0 ? (
+            <p>Tu carrito está vacío.</p>
+          ) : (
+            <div className="items-list">
+              {cartItems.map((it) => (
+                <div key={it.id} className="checkout-item">
+                  <div className="item-info">
+                    <h4>{it.nombre}</h4>
+                    <p>Precio: ${it.precio.toFixed(2)}</p>
+                    <p>Cantidad: {it.cantidad}</p>
+                    <p>Subtotal: ${(it.precio * it.cantidad).toFixed(2)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
     </main>
   );
 };

@@ -1,14 +1,115 @@
 .checkout-page {
-    padding: 1rem
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #222;
+    background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+}
+
+.checkout-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 58px;
+    color: #204e97;
+    text-shadow: #374151 2px 2px 4px;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .checkout-form {
+    flex: 0 0 40%;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    max-width: 420px
+    gap: 12px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.checkout-form input {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #e6e9ef;
+    border-radius: 8px;
+    outline: none;
+}
+
+.checkout-form input:focus {
+    box-shadow: 0 0 0 4px rgba(42, 116, 214, 0.08);
+    border-color: #2a74d6
+}
+
+.checkout-form button {
+    padding: 10px 14px;
+    background: #2a74d6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.checkout-items {
+    flex: 1 1 58%;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    margin-bottom: 60px;
+}
+
+.items-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px
+}
+
+.checkout-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff, #fbfdff);
+    border: 1px solid #f0f3f7
+}
+
+.checkout-item img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px
+}
+
+.checkout-item .item-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #111827
+}
+
+.checkout-item .item-info p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #374151
 }
 
 .checkout-summary {
-    margin-top: .5rem
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.checkout-summary p {
+    font-weight: 700;
+    font-size: 16px
 }
