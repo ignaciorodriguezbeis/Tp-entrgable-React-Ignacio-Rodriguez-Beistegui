@@ -1,0 +1,11 @@
+{
+  "name": "tp-entrgable-root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "setup": "npm --prefix tp-React-coderhouse install",
+    "dev": "npm --prefix tp-React-coderhouse run dev",
+    "build": "npm --prefix tp-React-coderhouse run build",
+    "preview": "npm --prefix tp-React-coderhouse run preview"
+  }
+}
